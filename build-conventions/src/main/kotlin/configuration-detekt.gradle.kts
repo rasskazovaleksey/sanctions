@@ -1,0 +1,22 @@
+plugins {
+    id("io.gitlab.arturbosch.detekt") apply false
+}
+
+tasks.getByName("detekt").enabled = false
+
+tasks.register<io.gitlab.arturbosch.detekt.Detekt>("detektAll") {
+    parallel = true
+    ignoreFailures = false
+    setSource(files(projectDir))
+    exclude("**/build/**")
+
+    buildUponDefaultConfig = false
+    reports {
+        xml.required.set(false)
+        txt.required.set(false)
+        html {
+            required.set(true)
+            outputLocation.set(File(project.buildDir, "reports/detekt.html"))
+        }
+    }
+}

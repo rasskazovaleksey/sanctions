@@ -1,0 +1,12 @@
+[libraries]
+# @pin AGP max Gradle version 8.0 rest is untested
+android-gradle-plugin = "com.android.tools.build:gradle:8.0.2"
+detekt-gradle-plugin = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.23.0"
+# @pin This version (1.4.7) of the Compose Compiler requires Kotlin version 1.8.21
+kotlin-gradle-plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.21"
+ktlint-gradle-plugin = "org.jlleitschuh.gradle:ktlint-gradle:11.3.2"
+mobile-multiplatform-plugin = "dev.icerock:mobile-multiplatform:0.14.2"
+
+[plugins]
+ben-manes-versions = "com.github.ben-manes.versions:0.46.0"
+version-catalog-update = "nl.littlerobots.version-catalog-update:0.8.0"
