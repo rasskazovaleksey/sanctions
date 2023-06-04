@@ -1,9 +1,13 @@
+[versions]
+# @pin This version (1.4.7) of the Compose Compiler requires Kotlin version 1.8.21
+kotlin = "1.8.21"
+
 [libraries]
 # @pin AGP max Gradle version 8.0 rest is untested
 android-gradle-plugin = "com.android.tools.build:gradle:8.0.2"
 detekt-gradle-plugin = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.23.0"
-# @pin This version (1.4.7) of the Compose Compiler requires Kotlin version 1.8.21
-kotlin-gradle-plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.21"
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
 ktlint-gradle-plugin = "org.jlleitschuh.gradle:ktlint-gradle:11.3.2"
 mobile-multiplatform-plugin = "dev.icerock:mobile-multiplatform:0.14.2"
 

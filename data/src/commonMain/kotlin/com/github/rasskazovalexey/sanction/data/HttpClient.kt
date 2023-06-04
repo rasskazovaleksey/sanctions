@@ -16,11 +16,13 @@ internal expect val engine: HttpClientEngine
 internal fun createClient(engine: HttpClientEngine): HttpClient =
     HttpClient(engine = engine) {
         install(ContentNegotiation) {
-            json(Json {
-                prettyPrint = true
-                isLenient = true
-                ignoreUnknownKeys = true
-            })
+            json(
+                Json {
+                    prettyPrint = true
+                    isLenient = true
+                    ignoreUnknownKeys = true
+                },
+            )
         }
         install(Logging) {
             logger = Logger.DEFAULT

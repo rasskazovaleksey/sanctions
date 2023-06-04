@@ -1,4 +1,3 @@
-import androidx.compose.ui.window.Application
 import androidx.compose.ui.window.ComposeUIViewController
 import com.github.rasskazovalexey.sanction.NavigationHost
 import com.github.rasskazovalexey.sanction.presentation.theme.AppTheme

@@ -9,8 +9,8 @@ tasks.register<io.gitlab.arturbosch.detekt.Detekt>("detektAll") {
     ignoreFailures = false
     setSource(files(projectDir))
     exclude("**/build/**")
-
-    buildUponDefaultConfig = false
+    buildUponDefaultConfig = true
+    config.setFrom(".detekt.yml")
     reports {
         xml.required.set(false)
         txt.required.set(false)

@@ -2,14 +2,15 @@ import java.util.*
 
 plugins {
     `kotlin-dsl`
-    @Suppress("DSL_SCOPE_VIOLATION") alias(libs.plugins.ben.manes.versions)
-    @Suppress("DSL_SCOPE_VIOLATION") alias(libs.plugins.version.catalog.update)
+    alias(libs.plugins.ben.manes.versions)
+    alias(libs.plugins.version.catalog.update)
 }
 
 dependencies {
     implementation(libs.android.gradle.plugin)
     implementation(libs.detekt.gradle.plugin)
     implementation(libs.kotlin.gradle.plugin)
+    implementation(libs.kotlin.serialization)
     implementation(libs.ktlint.gradle.plugin)
     implementation(libs.mobile.multiplatform.plugin)
     implementation(

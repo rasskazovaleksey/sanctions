@@ -1,6 +1,6 @@
 plugins {
     id("multiplatform-application-convention")
-    @Suppress("DSL_SCOPE_VIOLATION") alias(libs.plugins.jetbrains.compose)
+    alias(libs.plugins.jetbrains.compose)
 }
 
 compose {
@@ -8,7 +8,8 @@ compose {
 }
 
 dependencies {
-    @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class) commonMainImplementation(compose.material3)
+    @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
+    commonMainImplementation(compose.material3)
     commonMainImplementation(compose.foundation)
     commonMainImplementation(compose.runtime)
 

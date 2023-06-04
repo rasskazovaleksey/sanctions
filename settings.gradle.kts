@@ -9,7 +9,7 @@ pluginManagement {
     }
 }
 
-@Suppress("UnstableApiUsage") dependencyResolutionManagement {
+dependencyResolutionManagement {
     repositories {
         gradlePluginPortal()
         google()

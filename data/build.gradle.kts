@@ -1,7 +1,6 @@
 plugins {
     id("multiplatform-library-convention")
-    // TODO: shall be implemented via version catalog
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.8.21"
+    kotlin("plugin.serialization")
 }
 
 dependencies {

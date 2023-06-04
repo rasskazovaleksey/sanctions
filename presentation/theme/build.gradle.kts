@@ -1,6 +1,6 @@
 plugins {
     id("multiplatform-library-convention")
-    @Suppress("DSL_SCOPE_VIOLATION") alias(libs.plugins.jetbrains.compose)
+    alias(libs.plugins.jetbrains.compose)
 }
 
 compose {

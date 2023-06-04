@@ -15,14 +15,14 @@ sealed class DataResult<out E : Any, out T : Any> {
      * Success state implementation. Produce generic [T] value.
      * */
     data class Success<out T : Any> @PublishedApi internal constructor(
-        val value: T
+        val value: T,
     ) : DataResult<Nothing, T>()
 
     /**
      * Failure state implementation. Produce generic [E] error.
      * */
     data class Failure<out E : Any> @PublishedApi internal constructor(
-        val error: E
+        val error: E,
     ) : DataResult<E, Nothing>()
 
     companion object {

@@ -65,6 +65,6 @@ is taken from my previous project.
 
 #### Generic:
 
-Make sure that either project JDK is set to JDK 8+ if you want to run project via IDEA.
-If you want to run project via command line setup JAVA_HOME is set up to JDK 8+.
+Make sure that either project JDK is set to JDK 17+ if you want to run project via IDEA.
+If you want to run project via command line setup JAVA_HOME is set up to JDK 17+.
 
